@@ -21,8 +21,8 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "我的博客", // 修改为你的博客标题
-	subtitle: "欢迎来到我的个人博客", // 修改为你的副标题
+	title: "Mizuki",
+	subtitle: "One demo website",
 
 	lang: SITE_LANG,
 
@@ -40,27 +40,25 @@ export const siteConfig: SiteConfig = {
 		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
 	},
 	banner: {
-		enable: false, // 暂时禁用Banner壁纸模式，避免图片加载问题
+		enable: true, // 是否启动Banner壁纸模式
 
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				// 暂时注释掉，避免图片加载错误
-				// "/assets/desktop-banner/1.webp",
-				// "/assets/desktop-banner/2.webp",
-				// "/assets/desktop-banner/3.webp",
-				// "/assets/desktop-banner/4.webp",
-				// "/assets/desktop-banner/5.webp",
-				// "/assets/desktop-banner/6.webp",
+				"/assets/desktop-banner/1.webp",
+				"/assets/desktop-banner/2.webp",
+				"/assets/desktop-banner/3.webp",
+				"/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/5.webp",
+				"/assets/desktop-banner/6.webp",
 			], // 桌面横幅图片
 			mobile: [
-				// 暂时注释掉，避免图片加载错误
-				// "/assets/mobile-banner/1.webp",
-				// "/assets/mobile-banner/2.webp",
-				// "/assets/mobile-banner/3.webp",
-				// "/assets/mobile-banner/4.webp",
-				// "/assets/mobile-banner/5.webp",
-				// "/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/1.webp",
+				"/assets/mobile-banner/2.webp",
+				"/assets/mobile-banner/3.webp",
+				"/assets/mobile-banner/4.webp",
+				"/assets/mobile-banner/5.webp",
+				"/assets/mobile-banner/6.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -74,14 +72,14 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "欢迎来到我的博客!", // 修改为你的主标题
+			title: "Beautiful Mizuki!", // 主页横幅主标题
 
 			subtitle: [
-				"分享技术与生活",
-				"记录学习与成长",
-				"探索未知与可能",
-				"创造价值与意义",
-			], // 修改为你的副标题内容
+				"A Showcase Demo Site",
+				"Carousel Highlight: Innovation",
+				"Carousel Focus: User Experience",
+				"Carousel Spot: Core Advantages",
+			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
@@ -116,25 +114,23 @@ export const siteConfig: SiteConfig = {
 	],
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
-	enable: false, // 暂时禁用全屏壁纸功能，避免图片加载问题
+	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
 		desktop: [
-			// 暂时注释掉，避免图片加载错误
-			// "/assets/desktop-banner/1.webp",
-			// "/assets/desktop-banner/2.webp",
-			// "/assets/desktop-banner/3.webp",
-			// "/assets/desktop-banner/4.webp",
-			// "/assets/desktop-banner/5.webp",
-			// "/assets/desktop-banner/6.webp",
+			"/assets/desktop-banner/1.webp",
+			"/assets/desktop-banner/2.webp",
+			"/assets/desktop-banner/3.webp",
+			"/assets/desktop-banner/4.webp",
+			"/assets/desktop-banner/5.webp",
+			"/assets/desktop-banner/6.webp",
 		], // 桌面横幅图片
 		mobile: [
-			// 暂时注释掉，避免图片加载错误
-			// "/assets/mobile-banner/1.webp",
-			// "/assets/mobile-banner/2.webp",
-			// "/assets/mobile-banner/3.webp",
-			// "/assets/mobile-banner/4.webp",
-			// "/assets/mobile-banner/5.webp",
-			// "/assets/mobile-banner/6.webp",
+			"/assets/mobile-banner/1.webp",
+			"/assets/mobile-banner/2.webp",
+			"/assets/mobile-banner/3.webp",
+			"/assets/mobile-banner/4.webp",
+			"/assets/mobile-banner/5.webp",
+			"/assets/mobile-banner/6.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -159,17 +155,22 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/你的GitHub用户名", // 修改为你的GitHub链接
+					url: "https://github.com/matsuzaka-yuki/Mizuki",
 					external: true,
 					icon: "fa6-brands:github",
 				},
-				// 可以根据需要添加或删除链接
-				// {
-				// 	name: "Bilibili",
-				// 	url: "https://space.bilibili.com/你的B站ID",
-				// 	external: true,
-				// 	icon: "fa6-brands:bilibili",
-				// },
+				{
+					name: "Bilibili",
+					url: "https://space.bilibili.com/701864046",
+					external: true,
+					icon: "fa6-brands:bilibili",
+				},
+				{
+					name: "Gitee",
+					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					external: true,
+					icon: "mdi:git",
+				},
 			],
 		},
 		{
@@ -218,22 +219,25 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "", // 暂时留空，避免头像加载问题。你可以上传自己的头像到 public/assets/images/ 目录
-	name: "你的名字", // 修改为你的名字
-	bio: "热爱技术，热爱生活", // 修改为你的个人简介
+	avatar: "assets/images/avatar.gif", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "Mizuki",
+	bio: "世界很大,一定要去看看",
 	links: [
-		// 根据你的实际情况修改这些链接
+		{
+			name: "Bilibli",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/701864046",
+		},
+		{
+			name: "Gitee",
+			icon: "mdi:git",
+			url: "https://gitee.com/matsuzakayuki",
+		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/你的GitHub用户名", // 修改为你的GitHub链接
+			url: "https://github.com/matsuzaka-yuki",
 		},
-		// 可以添加更多社交媒体链接
-		// {
-		// 	name: "Bilibili",
-		// 	icon: "fa6-brands:bilibili",
-		// 	url: "https://space.bilibili.com/你的B站ID",
-		// },
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
 	umami: {
@@ -263,8 +267,8 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "欢迎", // 公告标题
-	content: "欢迎来到我的博客！这是我的个人技术博客。", // 修改为你的公告内容
+	title: "公告", // 公告标题
+	content: "欢迎来到我的博客！这是一个示例公告。", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -275,7 +279,7 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: false, // 暂时禁用音乐播放器，避免音乐文件加载问题
+	enable: true, // 启用音乐播放器功能
 };
 
 export const footerConfig: FooterConfig = {
@@ -400,7 +404,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 暂时禁用樱花特效，避免性能问题
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
