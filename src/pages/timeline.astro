@@ -1,60 +1,70 @@
 ---
-import MainGridLayout from '../layouts/MainGridLayout.astro';
-import { timelineData, getTimelineStats, getTimelineByType, getFeaturedTimeline, getCurrentItems, getTotalWorkExperience } from '../data/timeline';
-import { i18n } from '../i18n/translation';
-import I18nKey from '../i18n/i18nKey';
-import IconifyLoader from '../components/misc/IconifyLoader.astro';
-import Icon from '../components/misc/Icon.astro';
+import Icon from "../components/misc/Icon.astro";
+import IconifyLoader from "../components/misc/IconifyLoader.astro";
+import {
+	getCurrentItems,
+	getFeaturedTimeline,
+	getTimelineByType,
+	getTimelineStats,
+	timelineData,
+} from "../data/timeline";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
 
 const { lang } = Astro.props;
 
 // 收集所有时间线图标用于预加载
-const allIcons = timelineData.map(item => item.icon || getTypeIcon(item.type)).filter(Boolean);
+const allIcons = timelineData
+	.map((item) => item.icon || getTypeIcon(item.type))
+	.filter(Boolean);
 
 // 获取时间线统计信息
 const stats = getTimelineStats();
 const featuredItems = getFeaturedTimeline();
 const currentItems = getCurrentItems();
-const workExperience = getTotalWorkExperience();
 
 // 获取所有时间线项目（按时间倒序）
 const allTimelineItems = getTimelineByType();
 
 // 类型图标映射
 const getTypeIcon = (type: string) => {
-  switch (type) {
-    case 'education': return 'material-symbols:school';
-    case 'work': return 'material-symbols:work';
-    case 'project': return 'material-symbols:code';
-    case 'achievement': return 'material-symbols:emoji-events';
-    default: return 'material-symbols:event';
-  }
+	switch (type) {
+		case "education":
+			return "material-symbols:school";
+		case "work":
+			return "material-symbols:work";
+		case "project":
+			return "material-symbols:code";
+		case "achievement":
+			return "material-symbols:emoji-events";
+		default:
+			return "material-symbols:event";
+	}
 };
 
 // 格式化日期
 const formatDate = (dateString: string) => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long' });
+	const date = new Date(dateString);
+	return date.toLocaleDateString("zh-CN", { year: "numeric", month: "long" });
 };
 
 // 计算持续时间
 const getDuration = (startDate: string, endDate?: string) => {
-  const start = new Date(startDate);
-  const end = endDate ? new Date(endDate) : new Date();
-  const diffTime = Math.abs(end.getTime() - start.getTime());
-  const diffMonths = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 30));
-  
-  if (diffMonths < 12) {
-    return `${diffMonths} ${i18n(I18nKey.timelineMonths)}`;
-  } else {
-    const years = Math.floor(diffMonths / 12);
-    const months = diffMonths % 12;
-    if (months === 0) {
-      return `${years} ${i18n(I18nKey.timelineYears)}`;
-    } else {
-      return `${years} ${i18n(I18nKey.timelineYears)} ${months} ${i18n(I18nKey.timelineMonths)}`;
-    }
-  }
+	const start = new Date(startDate);
+	const end = endDate ? new Date(endDate) : new Date();
+	const diffTime = Math.abs(end.getTime() - start.getTime());
+	const diffMonths = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 30));
+
+	if (diffMonths < 12) {
+		return `${diffMonths} ${i18n(I18nKey.timelineMonths)}`;
+	}
+	const years = Math.floor(diffMonths / 12);
+	const months = diffMonths % 12;
+	if (months === 0) {
+		return `${years} ${i18n(I18nKey.timelineYears)}`;
+	}
+	return `${years} ${i18n(I18nKey.timelineYears)} ${months} ${i18n(I18nKey.timelineMonths)}`;
 };
 
 const title = i18n(I18nKey.timeline);
@@ -92,9 +102,9 @@ const subtitle = i18n(I18nKey.timelineSubtitle);
         </div>
         <div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg p-4">
           <div class="text-2xl font-bold text-orange-600 dark:text-orange-400">
-            {workExperience.years}+
+            {stats.byType.achievement}
           </div>
-          <div class="text-sm text-orange-600/70 dark:text-orange-400/70">{i18n(I18nKey.timelineExperience)}</div>
+          <div class="text-sm text-orange-600/70 dark:text-orange-400/70">{i18n(I18nKey.timelineAchievements)}</div>
         </div>
       </div>
 
@@ -334,30 +344,7 @@ const subtitle = i18n(I18nKey.timelineSubtitle);
             </div>
           </div>
           
-          <!-- 工作经验详情 -->
-          <div>
-            <h3 class="text-lg font-semibold text-black/80 dark:text-white/80 mb-4">
-              {i18n(I18nKey.timelineWorkExperience)}
-            </h3>
-            <div class="space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="text-black/70 dark:text-white/70">{i18n(I18nKey.timelineTotalExperience)}</span>
-                <span class="font-semibold text-black/90 dark:text-white/90">
-                  {workExperience.years} {i18n(I18nKey.timelineYears)} {workExperience.months} {i18n(I18nKey.timelineMonths)}
-                </span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-black/70 dark:text-white/70">{i18n(I18nKey.timelineWorkPositions)}</span>
-                <span class="font-semibold text-black/90 dark:text-white/90">{stats.byType.work}</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-black/70 dark:text-white/70">{i18n(I18nKey.timelineCurrentRole)}</span>
-                <span class="font-semibold text-black/90 dark:text-white/90">
-                  {currentItems.filter(item => item.type === 'work').length > 0 ? i18n(I18nKey.timelineEmployed) : i18n(I18nKey.timelineAvailable)}
-                </span>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>

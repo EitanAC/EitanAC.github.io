@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const en: Translation = {
 	[Key.home]: "Home",
-	[Key.about]: "About",
+	[Key.about]: "About Me",
 	[Key.archive]: "Archive",
 	[Key.search]: "Search",
 	[Key.other]: "Other",
@@ -43,32 +43,6 @@ export const en: Translation = {
 	[Key.publishedAt]: "Published at",
 	[Key.license]: "License",
 	[Key.friends]: "Friends",
-	[Key.anime]: "Anime",
-	[Key.diary]: "Moments",
-
-	// 番剧页面
-	[Key.animeTitle]: "My Anime Collection",
-	[Key.animeSubtitle]: "Documenting my anime journey",
-	[Key.animeList]: "Anime List",
-	[Key.animeTotal]: "Total",
-	[Key.animeWatching]: "Watching",
-	[Key.animeCompleted]: "Completed",
-	[Key.animeAvgRating]: "Avg Rating",
-	[Key.animeStatusWatching]: "Watching",
-	[Key.animeStatusCompleted]: "Completed",
-	[Key.animeStatusPlanned]: "Planned",
-	[Key.animeYear]: "Year",
-	[Key.animeStudio]: "Studio",
-
-	// 短文页面
-	[Key.diarySubtitle]: "Share life anytime, anywhere",
-	[Key.diaryCount]: "moments",
-	[Key.diaryImage]: "Image",
-	[Key.diaryReply]: "Reply",
-	[Key.diaryTips]: "Only showing the latest 30 moments",
-	[Key.diaryMinutesAgo]: "minutes ago",
-	[Key.diaryHoursAgo]: "hours ago",
-	[Key.diaryDaysAgo]: "days ago",
 
 	// 404页面
 	[Key.notFound]: "404",
@@ -79,16 +53,6 @@ export const en: Translation = {
 
 	// Music Player
 	[Key.playlist]: "Playlist",
-
-	// 相册页面
-	[Key.albums]: "Albums",
-	[Key.albumsSubtitle]: "Capturing beautiful moments in life",
-	[Key.albumsEmpty]: "No Albums",
-	[Key.albumsEmptyDesc]:
-		"No albums created yet. Start adding some beautiful memories!",
-	[Key.albumsBackToList]: "Back to Albums",
-	[Key.albumsPhotoCount]: "photo",
-	[Key.albumsPhotosCount]: "photos",
 
 	// Projects page
 	[Key.projects]: "Projects",

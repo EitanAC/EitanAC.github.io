@@ -31,6 +31,12 @@ export default defineConfig({
 
 	base: "/",
 	trailingSlash: "always",
+	// 配置环境变量
+	define: {
+		"import.meta.env.SHOW_ARCHIVED_POSTS": JSON.stringify(
+			process.env.SHOW_ARCHIVED_POSTS || "false",
+		),
+	},
 	integrations: [
 		tailwind({
 			nesting: true,

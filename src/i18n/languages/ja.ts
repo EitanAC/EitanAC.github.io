@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const ja: Translation = {
 	[Key.home]: "Home",
-	[Key.about]: "私たちについて",
+	[Key.about]: "私について",
 	[Key.archive]: "Archive",
 	[Key.search]: "検索",
 	[Key.other]: "その他",
@@ -43,32 +43,6 @@ export const ja: Translation = {
 	[Key.publishedAt]: "公開日",
 	[Key.license]: "ライセンス",
 	[Key.friends]: "友達",
-	[Key.anime]: "アニメ",
-	[Key.diary]: "つぶやき",
-
-	// 番剧页面
-	[Key.animeTitle]: "アニメコレクション",
-	[Key.animeSubtitle]: "私のアニメ旅行記録",
-	[Key.animeList]: "アニメリスト",
-	[Key.animeTotal]: "合計",
-	[Key.animeWatching]: "視聴中",
-	[Key.animeCompleted]: "視聴済み",
-	[Key.animeAvgRating]: "平均評価",
-	[Key.animeStatusWatching]: "視聴中",
-	[Key.animeStatusCompleted]: "視聴済み",
-	[Key.animeStatusPlanned]: "予定",
-	[Key.animeYear]: "年",
-	[Key.animeStudio]: "制作会社",
-
-	// 短文页面
-	[Key.diarySubtitle]: "いつでもどこでも、生活をシェア",
-	[Key.diaryCount]: "件のつぶやき",
-	[Key.diaryImage]: "画像",
-	[Key.diaryReply]: "返信",
-	[Key.diaryTips]: "最新30件のつぶやきのみ表示",
-	[Key.diaryMinutesAgo]: "分前",
-	[Key.diaryHoursAgo]: "時間前",
-	[Key.diaryDaysAgo]: "日前",
 
 	// 404ページ
 	[Key.notFound]: "404",
@@ -79,16 +53,6 @@ export const ja: Translation = {
 
 	// 音楽プレーヤー
 	[Key.playlist]: "プレイリスト",
-
-	// 相册页面
-	[Key.albums]: "アルバム",
-	[Key.albumsSubtitle]: "人生の美しい瞬間を記録する",
-	[Key.albumsEmpty]: "アルバムなし",
-	[Key.albumsEmptyDesc]:
-		"まだアルバムがありません。美しい思い出を追加しましょう！",
-	[Key.albumsBackToList]: "アルバムに戻る",
-	[Key.albumsPhotoCount]: "枚の写真",
-	[Key.albumsPhotosCount]: "枚の写真",
 
 	// プロジェクトページ
 	[Key.projects]: "プロジェクト",

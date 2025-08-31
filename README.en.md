@@ -20,7 +20,7 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 [**中文繁体**](./docs/README.tw.md) /
 
 ## 🆕 v4.3 Update
-- **Anime Page:** Redesigned a cuter and more attractive anime page, including anime list, details, and timeline.
+
 - **Album Page:** Restructured the album page using pagination + folder data indexing solution.
 
 ## 🆕 v3.4 Update
@@ -84,9 +84,9 @@ A modern, feature-rich static blog template built with [Astro](https://astro.bui
 - [x] Support for 10+ languages (Chinese, English, Japanese, Korean, Spanish, etc.)
 
 ### 📱 Special Pages
-- [x] **Anime Tracking Page** - Track anime watching progress and ratings
+
 - [x] **Friends Page** - Beautiful cards showcasing friend websites
-- [x] **Diary Page** - Share life moments, similar to social media
+
 - [x] **Archive Page** - Organized timeline view of articles
 - [x] **About Page** - Customizable personal introduction
 
@@ -257,9 +257,8 @@ export const siteConfig: SiteConfig = {
 
 ### 📱 Feature Page Configuration
 
-- **Anime Page:** Edit anime list in `src/pages/anime.astro`
+
 - **Friends Page:** Edit friend data in `src/content/spec/friends.md`
-- **Diary Page:** Edit moments in `src/pages/diary.astro`
 - **About Page:** Edit content in `src/content/spec/about.md`
 
 ## ✏️ Contributing

@@ -1,54 +1,32 @@
-# About This Site
+# 关于我
+转专业到金融学啦,后续我会在这个博客更新一些感兴趣的内容
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
 
-::github{repo="matsuzaka-yuki/Mizuki"}
 
-## 🌟 Theme Features
+### 个人项目
+- **个人博客系统** - 基于 Astro 构建的现代化博客
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+### 生活爱好
+- **音乐**: 喜欢摇滚和古典乐
+- **游戏**: 享受独立游戏和策略类游戏
+- **手工**: 制作二次元gk手办
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
 
-### 🌐 Internationalization
-- **Multi-language Support** - Real-time translation capabilities
-- **Auto Language Detection** - Detects user preferences automatically
-- **Client-side Translation** - Powered by Edge Translate technology
-- **10+ Languages Supported** - EN, ZH-CN, ZH-TW, JA, KO, ES, TH, VI, ID, TR
+## 📚 学习计划
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+### 短期目标
+- 学习编程
+- 学习金融领域内感兴趣的内容并记录困惑
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+### 长期愿景
+- 构建量化交易程序
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+## 🤝 联系我
 
----
+### 社交媒体
+- **GitHub**: [EitanAC](https://github.com/EitanAC)
+- **Bilibili**: [迷向子群_Moon](https://space.bilibili.com/286241193)
+- **知乎**: [迷向子群](https://www.zhihu.com/people/eitan-7)
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+
+*感谢您访问我的网站，希望这里的内容能够对您有所帮助！*

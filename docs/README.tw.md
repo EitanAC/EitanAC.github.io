@@ -257,9 +257,8 @@ export const siteConfig: SiteConfig = {
 
 ### 📱 特色頁面配置
 
-- **追番頁面：** 在 `src/pages/anime.astro` 中編輯動畫列表
+
 - **友鏈頁面：** 在 `src/content/spec/friends.md` 中編輯朋友數據
-- **日記頁面：** 在 `src/pages/diary.astro` 中編輯動態
 - **關於頁面：** 在 `src/content/spec/about.md` 中編輯內容
 
 ## ✏️ 貢獻

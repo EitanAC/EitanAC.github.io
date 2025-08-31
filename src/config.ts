@@ -155,38 +155,25 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/EitanAC",
 					external: true,
 					icon: "fa6-brands:github",
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://space.bilibili.com/286241193",
 					external: true,
 					icon: "fa6-brands:bilibili",
 				},
 				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					name: "zhihu",
+					url: "https://www.zhihu.com/people/eitan-7",
 					external: true,
-					icon: "mdi:git",
+					icon: "fa6-brands:zhihu",
 				},
 			],
 		},
-		{
-			name: "我的",
-			url: "/content/",
-			icon: "material-symbols:person",
-			children: [
-				LinkPreset.Anime,
-				LinkPreset.Diary,
-				{
-					name: "相册",
-					url: "/albums/",
-					icon: "material-symbols:photo-library",
-				},
-			],
-		},
+
 		{
 			name: "关于",
 			url: "/content/",
@@ -273,7 +260,7 @@ export const commentConfig: CommentConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题
-	content: "欢迎来到我的博客！这是一个示例公告。", // 公告内容
+	content: "欢迎来到我的博客", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接

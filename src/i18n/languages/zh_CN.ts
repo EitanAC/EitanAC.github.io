@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
 	[Key.home]: "主页",
-	[Key.about]: "关于我们",
+	[Key.about]: "关于我",
 	[Key.archive]: "归档",
 	[Key.search]: "搜索",
 	[Key.other]: "其他",
@@ -42,32 +42,6 @@ export const zh_CN: Translation = {
 	[Key.author]: "作者",
 	[Key.publishedAt]: "发布于",
 	[Key.license]: "许可协议",
-	[Key.anime]: "追番",
-	[Key.diary]: "日记",
-
-	// 番剧页面
-	[Key.animeTitle]: "我的追番记录",
-	[Key.animeSubtitle]: "记录我的二次元之旅",
-	[Key.animeList]: "追番列表",
-	[Key.animeTotal]: "总数",
-	[Key.animeWatching]: "追番中",
-	[Key.animeCompleted]: "已追完",
-	[Key.animeAvgRating]: "平均评分",
-	[Key.animeStatusWatching]: "追番中",
-	[Key.animeStatusCompleted]: "已追完",
-	[Key.animeStatusPlanned]: "计划中",
-	[Key.animeYear]: "年份",
-	[Key.animeStudio]: "制作",
-
-	// 短文页面
-	[Key.diarySubtitle]: "随时随地，分享生活",
-	[Key.diaryCount]: "条短文",
-	[Key.diaryImage]: "图片",
-	[Key.diaryReply]: "回复",
-	[Key.diaryTips]: "只展示最近30条日记",
-	[Key.diaryMinutesAgo]: "分钟前",
-	[Key.diaryHoursAgo]: "小时前",
-	[Key.diaryDaysAgo]: "天前",
 
 	// 404页面
 	[Key.notFound]: "404",
@@ -77,15 +51,6 @@ export const zh_CN: Translation = {
 
 	// 音乐播放器
 	[Key.playlist]: "播放列表",
-
-	// 相册页面
-	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
-	[Key.albumsEmpty]: "暂无相册",
-	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
-	[Key.albumsBackToList]: "返回相册",
-	[Key.albumsPhotoCount]: "张照片",
-	[Key.albumsPhotosCount]: "张照片",
 
 	// 项目展示页面
 	[Key.projects]: "项目展示",
