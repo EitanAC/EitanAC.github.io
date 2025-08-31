@@ -19,69 +19,30 @@ export interface Project {
 
 export const projectsData: Project[] = [
 	{
-		id: 'mizuki-blog',
-		title: 'Mizuki Blog Theme',
-		description: '基于Astro框架开发的现代化博客主题，支持多语言、暗黑模式、响应式设计等功能。',
+		id: 'personal-blog',
+		title: '个人博客构建',
+		description: '基于Astro框架开发的现代化个人博客，支持多语言、暗黑模式、响应式设计等功能。',
 		image: '',
 		category: 'web',
 		techStack: ['Astro', 'TypeScript', 'Tailwind CSS', 'Svelte'],
 		status: 'completed',
-		liveDemo: 'https://blog.example.com',
-		sourceCode: 'https://github.com/example/mizuki',
 		startDate: '2024-01-01',
-		endDate: '2024-06-01',
+		endDate: '2024-12-01',
 		featured: true,
-		tags: ['Blog', 'Theme', 'Open Source']
+		tags: ['Blog', 'Personal', 'Web Development']
 	},
 	{
-		id: 'portfolio-website',
-		title: 'Personal Portfolio',
-		description: '个人作品集网站，展示项目经验和技术技能。',
+		id: 'day-trading-handbook',
+		title: '日内交易员技术手册',
+		description: '专为日内交易员编写的技术手册，涵盖交易策略、风险管理、技术分析等核心内容。',
 		image: '',
-		category: 'web',
-		techStack: ['React', 'Next.js', 'TypeScript', 'Framer Motion'],
+		category: 'other',
+		techStack: ['Writing', 'Research', 'Financial Analysis'],
 		status: 'completed',
-		liveDemo: 'https://portfolio.example.com',
-		sourceCode: 'https://github.com/example/portfolio',
-		startDate: '2023-09-01',
-		endDate: '2023-12-01',
+		startDate: '2024-06-01',
+		endDate: '2024-12-01',
 		featured: true,
-		tags: ['Portfolio', 'React', 'Animation']
-	},
-	{
-		id: 'task-manager-app',
-		title: 'Task Manager App',
-		description: '跨平台任务管理应用，支持团队协作和项目管理。',
-		image: '',
-		category: 'mobile',
-		techStack: ['React Native', 'TypeScript', 'Redux', 'Firebase'],
-		status: 'in-progress',
-		startDate: '2024-03-01',
-		tags: ['Mobile', 'Productivity', 'Team Collaboration']
-	},
-	{
-		id: 'data-visualization-tool',
-		title: 'Data Visualization Tool',
-		description: '数据可视化工具，支持多种图表类型和交互式分析。',
-		image: '',
-		category: 'web',
-		techStack: ['Vue.js', 'D3.js', 'TypeScript', 'Node.js'],
-		status: 'completed',
-		liveDemo: 'https://dataviz.example.com',
-		startDate: '2023-06-01',
-		endDate: '2023-11-01',
-		tags: ['Data Visualization', 'Analytics', 'Charts']
-	},
-	{
-		id: 'e-commerce-platform',
-		title: 'E-commerce Platform',
-		description: '全栈电商平台，包含用户管理、商品管理、订单处理等功能。',
-		image: '',
-		category: 'web',
-		techStack: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe'],
-		status: 'planned',
-		startDate: '2024-07-01',
-		tags: ['E-commerce', 'Full Stack', 'Payment Integration']
+		tags: ['金融', '交易', 'Technical Analysis', 'Risk Management']
 	}
 ];
 
