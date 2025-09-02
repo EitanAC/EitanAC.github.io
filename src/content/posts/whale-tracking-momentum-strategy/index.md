@@ -59,6 +59,8 @@ $$\Delta p \approx \left(\frac{\alpha+1}{C}Q\right)^{\frac{1}{\alpha+1}} \Righta
 
 这里的**直观**含义就是当mid附近的挂单稀少而随着价格距离增加，挂单越来越多，这就导致了 $\Delta p$ 对 $Q$ 的增长是**迟滞的、次线性**的。
 
+(我是更新分割线)
+
 ## 参考文献
 
 1. Bouchaud, J. P., Farmer, J. D., & Lillo, F. (2009). How markets slowly digest changes in supply and demand. *Handbook of Financial Markets: Dynamics and Evolution*, 57-160.
