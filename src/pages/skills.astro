@@ -1,4 +1,6 @@
 ---
+import Icon from "../components/misc/Icon.astro";
+import IconifyLoader from "../components/misc/IconifyLoader.astro";
 import { UNCATEGORIZED } from "../constants/constants";
 import {
 	getAdvancedSkills,
@@ -10,8 +12,6 @@ import {
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import IconifyLoader from "../components/misc/IconifyLoader.astro";
-import Icon from "../components/misc/Icon.astro";
 
 const { lang } = Astro.props;
 
@@ -88,7 +88,7 @@ const title = i18n(I18nKey.skills);
 const subtitle = i18n(I18nKey.skillsSubtitle);
 
 // 收集所有技能图标用于预加载
-const allIcons = skillsData.map(skill => skill.icon).filter(Boolean);
+const allIcons = skillsData.map((skill) => skill.icon).filter(Boolean);
 ---
 
 <MainGridLayout title={title} description={subtitle}>

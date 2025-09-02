@@ -5,12 +5,16 @@ import Navbar from "@components/Navbar.astro";
 import SideBar from "@components/widget/SideBar.astro";
 import type { MarkdownHeading } from "astro";
 import { Icon } from "astro-icon/components";
-import ImageWrapper from "../components/misc/ImageWrapper.astro";
 import FullscreenWallpaper from "../components/misc/FullscreenWallpaper.astro";
 import IconifyLoader from "../components/misc/IconifyLoader.astro";
+import ImageWrapper from "../components/misc/ImageWrapper.astro";
 import TypewriterText from "../components/TypewriterText.astro";
 import TOC from "../components/widget/TOC.astro";
-import { sidebarLayoutConfig, siteConfig, fullscreenWallpaperConfig } from "../config";
+import {
+	fullscreenWallpaperConfig,
+	sidebarLayoutConfig,
+	siteConfig,
+} from "../config";
 import {
 	BANNER_HEIGHT,
 	BANNER_HEIGHT_EXTEND,
@@ -132,10 +136,13 @@ const mainContentClass = `
 	.replace(/\s+/g, " ");
 
 // 检查是否应该启用半透明效果
-const shouldEnableTransparency = !siteConfig.banner.enable && fullscreenWallpaperConfig.enable;
+const shouldEnableTransparency =
+	!siteConfig.banner.enable && fullscreenWallpaperConfig.enable;
 
 // 为组件添加半透明效果的CSS类
-const transparentClass = shouldEnableTransparency ? 'wallpaper-transparent' : '';
+const transparentClass = shouldEnableTransparency
+	? "wallpaper-transparent"
+	: "";
 ---
 
 <Layout title={title} banner={banner} description={description} lang={lang} setOGTypeArticle={setOGTypeArticle}>

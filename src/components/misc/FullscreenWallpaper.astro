@@ -33,7 +33,8 @@ if (!hasDesktopImages && !hasMobileImages) {
 }
 
 // 轮播相关逻辑
-const isCarouselEnabled = config.carousel?.enable && 
+const isCarouselEnabled =
+	config.carousel?.enable &&
 	(imageSources.desktop.length > 1 || imageSources.mobile.length > 1);
 const carouselInterval = config.carousel?.interval || 5;
 
