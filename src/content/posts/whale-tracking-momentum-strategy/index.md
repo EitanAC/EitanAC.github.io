@@ -65,7 +65,7 @@ $$\Delta p \approx \left(\frac{\alpha+1}{C}Q\right)^{\frac{1}{\alpha+1}} \Righta
 1. 可以用历史数据进行拟合得到市场的参数模型值:$$\ln\Delta p=\delta \ln Q+\ln (\frac{1}{C\delta})=\delta \ln Q+\ln a$$
 2. 实时监测某段窗口的$(Q,\Delta p)$找出变异值(通过残差分析):$$定义残差:r_{i}=\Delta p_{i}-\hat{a}Q^{\hat{\delta}}$$计算残差的标准差$\sigma _{r}$判定如果$|r_{i}|>k\sigma _{r}$则标记为异常点,其中$k$为阈值参数.
 
-
+(我是更新分割线)
 ## 参考文献
 
 1. Bouchaud, J. P., Farmer, J. D., & Lillo, F. (2009). How markets slowly digest changes in supply and demand. *Handbook of Financial Markets: Dynamics and Evolution*, 57-160.
